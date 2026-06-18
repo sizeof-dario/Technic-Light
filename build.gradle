@@ -53,7 +53,9 @@ processResources {
 }
 
 tasks.withType(JavaCompile).configureEach {
-	it.options.release = 25
+    it.options.release = 25
+    dependsOn 'genCommonSourcesWithVineflower'
+    dependsOn 'genClientOnlySourcesWithVineflower'
 }
 
 java {
