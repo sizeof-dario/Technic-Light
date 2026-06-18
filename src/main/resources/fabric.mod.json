@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "technic-light",
+	"version": "${version}",
+	"name": "Technic Light",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/technic-light/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.techniclight.techniclightmod.TechnicLight"
+		],
+		"client": [
+			"com.techniclight.techniclightmod.client.TechnicLightClient"
+		],
+		"fabric-datagen": [
+			"com.techniclight.techniclightmod.client.TechnicLightDataGenerator"
+		]
+	},
+	"mixins": [
+		"technic-light.mixins.json",
+		{
+			"config": "technic-light.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
