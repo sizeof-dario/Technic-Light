@@ -21,7 +21,10 @@ public class TechnicLight implements ModInitializer {
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
 
-		LOGGER.info("Hello Fabric world!");
+		// LOGGER.info("Hello Fabric world!");
+		ModItems.initialize();
+		ModBlocks.initialize();
+		ModBlockEntities.initialize();
 	}
 
 	public static Identifier id(String path) {

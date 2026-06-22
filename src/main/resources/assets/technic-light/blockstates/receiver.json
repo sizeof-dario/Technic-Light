@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "technic-light:block/receiver"
+    },
+    "powered=true": {
+      "model": "technic-light:block/receiver_on"
+    }
+  }
+}
